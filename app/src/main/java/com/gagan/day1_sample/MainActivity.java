@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                      Message.setTextColor(Color.RED);
                      Message.setText("failed");
+                     showAlert();
 //           Toast.makeText(this,"login failed",Toast.LENGTH_SHORT).show();
                 }
 
@@ -63,6 +64,9 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"enter valid data",Toast.LENGTH_SHORT).show();
             }
         });
+
+        AlertDialog mAlertDialog = alertDialogBuilder.create();
+        mAlertDialog.show();
     }
 
 }

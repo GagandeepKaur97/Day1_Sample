@@ -40,11 +40,12 @@ public class MainActivity extends AppCompatActivity {
                      Message.setText("login successful");
 //            Toast.makeText(this,"success login",Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                    intent.putExtra("name" , "admin@123");
                     startActivity(intent);
                 } else {
                      Message.setTextColor(Color.RED);
                      Message.setText("failed");
-                     showAlert();
+                         showAlert();
 //           Toast.makeText(this,"login failed",Toast.LENGTH_SHORT).show();
                 }
 

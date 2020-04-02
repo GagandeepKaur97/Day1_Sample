@@ -27,7 +27,7 @@ public class Main2Activity extends AppCompatActivity {
         mNames.add("Nigara Fall");
         mImageUrls.add("https://media4.picsearch.com/is?E9YZaJ4lwxO1RTHLeHbs7tNzuPYjQyTW3EeEpk6Z9A4&height=255");
         mImageUrls.add("CN tower");
-initRecyclerview();
+        initRecyclerview();
     }
     private void initRecyclerview(){
         Log.d(TAG,"initRecyclerview:init recyclerview.");

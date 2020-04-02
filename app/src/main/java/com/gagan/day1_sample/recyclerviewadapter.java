@@ -32,16 +32,16 @@ public class recyclerviewadapter extends RecyclerView.Adapter<recyclerviewadapte
 
 
 
-    @NonNull
+    
     @Override
-    public recyclerviewadapter.viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int i) {
+    public recyclerviewadapter.viewHolder onCreateViewHolder( ViewGroup parent, int i) {
         View view = LayoutInflater.from( parent.getContext()).inflate(R.layout.listitems,parent,false);
         viewHolder holder = new viewHolder(view) ;
         return holder;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull recyclerviewadapter.viewHolder holder, final int position) {
+    public void onBindViewHolder( recyclerviewadapter.viewHolder holder, final int position) {
         Log.d(TAG,"onBindViewHolder:called.");
         Glide.with(mContext)
                 .asBitmap()
